@@ -25,7 +25,16 @@ namespace COMP123_S2016_Assignment4
 
         }
 
-
+        /**
+ * <summary>
+ * This dice method creates a console menu that allows the user to choose
+ * a Lotto game to execute.
+ * </summary>
+ * 
+ * @static
+ * @method Dice
+ * @returns {void}
+ */
         public static void Dice()
         {
 
