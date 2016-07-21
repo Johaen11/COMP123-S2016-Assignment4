@@ -8,12 +8,17 @@ using System.Threading.Tasks;
  * Date: July 20, 2016
  * StudentID: 300880309
  * Description: a	C#	project	to	assign	seats	on	each	flight	of	the	airline’s	only	plane
- * Version: 0.01
+ * Version: 0.02
  */
 namespace COMP123_ASSIGNMENT4_2
 {
     class Program
     {
+        /**
+         * @static
+         * @method Main
+         * @returns {void}
+         */
         static void Main(string[] args)
         {
 
@@ -36,7 +41,16 @@ namespace COMP123_ASSIGNMENT4_2
             DisplayMenu(seating, assignedSeat);
 
         }
-
+        /**
+* <summary>
+* This method displays the menu using a while loop
+* </summary>
+* 
+* @static
+* @method DisplayMenu
+* 
+* @returns {void}
+*/
         public static void DisplayMenu(List<string> seating, List<string> assignedSeat)
         {
             bool ContinueLoop = true;
@@ -69,6 +83,16 @@ namespace COMP123_ASSIGNMENT4_2
             }
         }
 
+        /**
+* <summary>
+* This method adds the person to first Class
+* </summary>
+* 
+* @static
+* @method firstClass
+* 
+* @returns {void}
+*/
         public static void firstClass(List<string> seats, List<string> Assigned)
         {
             if (seats.Remove("First Class"))
@@ -78,7 +102,7 @@ namespace COMP123_ASSIGNMENT4_2
             }
             else
             {
-                Console.WriteLine("Is it okay to be placed in the economy section");
+                Console.WriteLine("Is it okay to be placed in the economy section?");
                 string answer = Console.ReadLine();
 
                 if (answer == "yes")
@@ -91,6 +115,16 @@ namespace COMP123_ASSIGNMENT4_2
                 }
             }
         }
+        /**
+* <summary>
+* This method adds person to the economy class
+* </summary>
+* 
+* @static
+* @method Economy
+* 
+* @returns {void}
+*/
         public static void Economy(List<string> seat, List<string> Assigned)
         {
 
